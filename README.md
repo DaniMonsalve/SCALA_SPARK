@@ -61,6 +61,11 @@ la lista se ordena de forma descendente. El par con el segundo componente más a
 -Lenguajes de rango intento #3: rankLangsReduceByKey
 En el caso de que el índice invertido de arriba sólo se utilice para calcular la clasificación y para ninguna otra tarea (búsqueda de texto completo, por ejemplo), es más eficiente utilizar el método reduceByKey para calcular la clasificación directamente, sin calcular primero un índice invertido. 
 
+
+	# EJECUCIÓN:
+ <img width="944" alt="image" src="https://github.com/user-attachments/assets/4ced0cdc-a2db-4b26-9690-c2969dacb083">
+
+
 Utilizando reduceByKey, al igual que en las partes 1 y 2, rankLangsReduceByKey calcula una lista de pares en la que el segundo componente del par es el número de ofertas que mencionan el texto dado (el primer componente del par es el nombre dado).
 
 De nuevo, la lista se clasifica en orden descendente. 
