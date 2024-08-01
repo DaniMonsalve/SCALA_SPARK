@@ -1,5 +1,5 @@
 # SCALA_SPARK
-Este proyecto es una aplicación en Scala que utiliza Apache Spark para clasificar ofertas de empleo según los lenguajes de programación mencionados en los textos. El objetivo es demostrar diferentes técnicas de clasificación y procesamiento de datos en grandes volúmenes. En este sentido, el programa utiliza Spark para explorar los lenguajes de programación más mencionados en las ofertas de trabajo publicadas en LinkedIn. La información utilizada se extrae de un fichero de texto completo, con información previamente descargada mediante web scraping (este proceso se encuentra disponible en el repositorio "ETL-WebScraping-Selenium-NPL").
+Este proyecto es una aplicación en Scala que utiliza Apache Spark para clasificar ofertas de empleo según los lenguajes de programación mencionados en los textos, utilizando para ello 3 técnicas diferentes de clasificación y procesamiento de datos. En este sentido, el programa utiliza Spark para explorar los lenguajes de programación más mencionados en las ofertas de trabajo publicadas en LinkedIn. La información utilizada se extrae de un fichero de texto completo, con información previamente descargada mediante web scraping (este proceso de web-scraping se encuentra disponible en el repositorio "ETL-WebScraping-Selenium-NPL").
 
 	# REQUISITOS:
 Scala 3.3.0
@@ -46,7 +46,7 @@ Se crea un RDD(implementando val wikiRdd) que contiene los objetos OfertasDataAr
 
 	# CLASIFICACIÓN DE LOS LENGUAJES REALIZADA:
 
-Utilizaremos una métrica sencilla para determinar la popularidad de un lenguaje de programación: el número de ofertas que mencionan el lenguaje al menos una vez.
+La métrica para determinar la popularidad de un lenguaje de programación es el número de ofertas que mencionan el lenguaje al menos una vez.
 
 -Intento de clasificación de lenguajes nº 1: rankLangs
 Cálculo deoccurrencesOfLang
